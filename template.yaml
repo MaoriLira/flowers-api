@@ -10,6 +10,11 @@ Globals:
     MemorySize: 128
     LoggingConfig:
       LogFormat: JSON
+  Api:
+    Cors:
+      AllowMethods: "'POST, OPTIONS'"
+      AllowHeaders: "'Content-Type'"
+      AllowOrigin: "'*'"
 
 Resources:
   # 1. Capa de Persistencia (DynamoDB)
